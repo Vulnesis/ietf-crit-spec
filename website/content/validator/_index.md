@@ -17,9 +17,9 @@ parser all run client-side.
 
 ## Sources
 
-- Schemas: [crit-record-v0.3.0](https://github.com/Vulnetix/ietf-crit-spec/blob/main/schemas/crit-record-v0.3.0.schema.json) · [crit-dictionary-v0.3.0](https://github.com/Vulnetix/ietf-crit-spec/blob/main/schemas/crit-dictionary-v0.3.0.schema.json)
-- Sample envelopes: [samples/](https://github.com/Vulnetix/ietf-crit-spec/tree/main/samples)
-- Reference validator (Go): [cmd/crit-validate](https://github.com/Vulnetix/ietf-crit-spec/tree/main/cmd/crit-validate)
+- Schemas: [crit-record-v0.3.0](https://github.com/Vulnesis/ietf-crit-spec/blob/main/schemas/crit-record-v0.3.0.schema.json) · [crit-dictionary-v0.3.0](https://github.com/Vulnesis/ietf-crit-spec/blob/main/schemas/crit-dictionary-v0.3.0.schema.json)
+- Sample envelopes: [samples/](https://github.com/Vulnesis/ietf-crit-spec/tree/main/samples)
+- Reference validator (Go): [cmd/crit-validate](https://github.com/Vulnesis/ietf-crit-spec/tree/main/cmd/crit-validate)
 
 ## Modes
 

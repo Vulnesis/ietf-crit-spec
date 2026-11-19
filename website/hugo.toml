@@ -19,6 +19,6 @@ enableRobotsTXT = true
 [params]
   description = "Cloud Resource Identifier Templates — a machine-readable format for identifying cloud resources affected by known vulnerabilities."
   tagline = "CVSS-style for cloud-native CVEs."
-  githubURL = "https://github.com/Vulnetix/ietf-crit-spec"
+  githubURL = "https://github.com/Vulnesis/ietf-crit-spec"
   ietfDraftURL = "https://datatracker.ietf.org/doc/draft-vulnetix-crit/"
   ogImage = "/assets/vulnetix-og-square.png"

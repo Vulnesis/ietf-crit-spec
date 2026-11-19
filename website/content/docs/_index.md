@@ -51,6 +51,6 @@ operators need to remediate it.
 ## Contributing
 
 CRIT is developed in the open. Issues and PRs welcome at
-[github.com/Vulnetix/ietf-crit-spec](https://github.com/Vulnetix/ietf-crit-spec).
+[github.com/Vulnetix/ietf-crit-spec](https://github.com/Vulnesis/ietf-crit-spec).
 For real-time discussion join the
 [Vulnesis Discord](https://discord.gg/vulnetix).

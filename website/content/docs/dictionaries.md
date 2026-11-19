@@ -60,7 +60,7 @@ A dictionary file is a single JSON object:
 
 Validate it via the [in-browser validator](../../validator/) before
 opening a PR against
-[ietf-crit-spec/dictionaries/](https://github.com/Vulnetix/ietf-crit-spec/tree/main/dictionaries).
+[ietf-crit-spec/dictionaries/](https://github.com/Vulnesis/ietf-crit-spec/tree/main/dictionaries).
 
 ## Custom dictionaries (per-record)
 

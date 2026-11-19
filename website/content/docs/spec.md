@@ -60,6 +60,6 @@ metadata an operator needs to act on it.
 ## Schema
 
 Every CRIT record validates against
-[`crit-record-v0.3.0.schema.json`](https://github.com/Vulnetix/ietf-crit-spec/blob/main/schemas/crit-record-v0.3.0.schema.json).
+[`crit-record-v0.3.0.schema.json`](https://github.com/Vulnesis/ietf-crit-spec/blob/main/schemas/crit-record-v0.3.0.schema.json).
 The reference implementation embeds it; the
 [in-browser validator](../../validator/) loads it client-side via fetch.

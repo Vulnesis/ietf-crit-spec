@@ -636,7 +636,7 @@ Setup
 
 .. code-block:: bash
 
-   git clone https://github.com/Vulnetix/ietf-crit-spec.git
+   git clone https://github.com/Vulnesis/ietf-crit-spec.git
    cd ietf-crit-spec
    just setup-hooks
 
