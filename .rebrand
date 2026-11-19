@@ -1,0 +1,9 @@
+# scripts/rebrand.py config (Vulnesis/ops).
+# Published IETF Internet-Drafts are immutable external documents: their file
+# names, draft names, datatracker URLs and author addresses stay as published.
+ignore drafts/*
+keep draft-vulnetix-crit
+# The CRIT record schema $id is a published identifier.
+keep https://vulnetix.com/schemas/
+# Rendered drafts (published IETF artifacts) are left as published.
+ignore build/*
