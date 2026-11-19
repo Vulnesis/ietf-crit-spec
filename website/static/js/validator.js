@@ -500,7 +500,7 @@
       containers: {
         cna: { providerMetadata: { orgId: '8254265b-2729-46b6-b9e3-3dfca2d5bfca' }, descriptions: [{ lang: 'en', value: 'runc through 1.1.11 — file descriptor leak via WORKDIR.' }] },
         adp: [{
-          providerMetadata: { orgId: '8d7b6f2a-0b1c-4f5d-a3e6-9c8d7e6f5a4b', shortName: 'Vulnetix' },
+          providerMetadata: { orgId: '8d7b6f2a-0b1c-4f5d-a3e6-9c8d7e6f5a4b', shortName: 'Vulnesis' },
           x_crit: [
             null,
           ],

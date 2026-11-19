@@ -21,7 +21,7 @@ enrichment of a CNA's CVE. CRIT lives there as `x_crit`.
       {
         "providerMetadata": {
           "orgId": "8d7b6f2a-0b1c-4f5d-a3e6-9c8d7e6f5a4b",
-          "shortName": "Vulnetix"
+          "shortName": "Vulnesis"
         },
         "x_crit": [
           { "vectorString": "CRITv0.3.0/CP:AW/...", "vuln_id": "CVE-2024-21626", "provider": "aws", "service": "eks", "resource_type": "cluster", … },
@@ -55,7 +55,7 @@ enrichment of a CNA's CVE. CRIT lives there as `x_crit`.
 CVE.org reserves the CNA container for the CVE numbering authority
 that issued the CVE (vendor or coordinator). ADP is the spec-level
 extension point for **third-party enrichment** — exactly what CRIT
-is. Vulnetix publishes CRIT records into ADP entries it operates;
+is. Vulnesis publishes CRIT records into ADP entries it operates;
 other publishers can do the same with their own `providerMetadata`.
 
 ## Validating a CVE+x_crit record

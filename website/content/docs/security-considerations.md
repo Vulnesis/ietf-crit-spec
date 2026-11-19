@@ -82,7 +82,7 @@ conflicting field values (different `fix_propagation`, different
 incorrect remediation decisions.
 
 Producers **SHOULD** define and expose a conflict-resolution
-policy. The Vulnetix VDB pipeline's policy is documented in the
+policy. The Vulnesis VDB pipeline's policy is documented in the
 publisher: the most recent `generatedAt` wins; older records move
 to `superseded/` for audit. Other producers are free to pick a
 different rule, but the policy **MUST** be deterministic.

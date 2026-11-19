@@ -15,8 +15,8 @@ both integrations side by side.
 ## CVE List v5 — ADP `x_crit`
 
 CRIT data lands inside the **Authorized Data Publisher** container
-on a CVE 5.x record. The Vulnetix ADP container is identified by
-`providerMetadata.shortName = "VVD"` (or the Vulnetix `orgId`).
+on a CVE 5.x record. The Vulnesis ADP container is identified by
+`providerMetadata.shortName = "VVD"` (or the Vulnesis `orgId`).
 
 ```json
 "containers": {

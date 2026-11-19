@@ -1,4 +1,4 @@
-baseURL = "https://crit.vulnetix.com/"
+baseURL = "https://crit.vulnes.is/"
 [languages.en]
   languageName = "English"
   weight = 1

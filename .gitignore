@@ -13,7 +13,7 @@ website/resources/_gen/
 **/terraform.tfstate
 **/terraform.tfstate.backup
 **/*.tfvars
-# Vulnetix scan output and credentials
+# Vulnesis scan output and credentials
 .vulnetix/
 !.vulnetix/workflow.yaml
 !.vulnetix/workflow.yaml

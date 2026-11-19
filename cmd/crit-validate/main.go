@@ -1,4 +1,4 @@
-// crit-validate validates CVEListv5 JSON files containing Vulnetix VVD ADP
+// crit-validate validates CVEListv5 JSON files containing Vulnesis VVD ADP
 // containers with x_crit extensions against the CRIT specification
 // (draft-vulnetix-crit-02).
 //

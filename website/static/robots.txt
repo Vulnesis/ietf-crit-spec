@@ -28,4 +28,4 @@ User-agent: Diffbot
 User-agent: img2dataset
 Allow: /
 
-Sitemap: https://docs.cli.vulnetix.com/sitemap.xml
+Sitemap: https://docs.cli.vulnes.is/sitemap.xml

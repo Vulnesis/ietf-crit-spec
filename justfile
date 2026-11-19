@@ -85,7 +85,7 @@ test-clean:
 # Run full test suite: clean reports, run spec tests, validate schemas, validate CVE data
 test: test-clean test-spec test-validate-samples test-validate-records test-cve-crit
 
-# Download CVE records from cve.org and inject Vulnetix ADP container with x_crit data from samples
+# Download CVE records from cve.org and inject Vulnesis ADP container with x_crit data from samples
 fetch-cve-data:
     #!/usr/bin/env sh
     set -e
@@ -100,7 +100,7 @@ fetch-cve-data:
             curl -s "https://cveawg.mitre.org/api/cve/$vid" | jq '.' > "$dest"
         fi
     done
-    echo "Injecting Vulnetix ADP containers..."
+    echo "Injecting Vulnesis ADP containers..."
     for cve_file in data/**/*.json; do
         cve_id=$(jq -r '.cveMetadata.cveId' "$cve_file")
         # Skip if VVD ADP already present
@@ -118,7 +118,7 @@ fetch-cve-data:
             fi
         done
         count=$(jq 'length' /tmp/crit_records.json)
-        jq --slurpfile crit /tmp/crit_records.json '.containers.adp = ((.containers.adp // []) + [{"providerMetadata":{"orgId":"8254265b-2729-46b6-b9e3-3dfca2d5bfca","shortName":"VVD"},"title":"Vulnetix Vulnerability Database Enrichment","x_crit":$crit[0]}])' "$cve_file" > "${cve_file}.tmp" && mv "${cve_file}.tmp" "$cve_file"
+        jq --slurpfile crit /tmp/crit_records.json '.containers.adp = ((.containers.adp // []) + [{"providerMetadata":{"orgId":"8254265b-2729-46b6-b9e3-3dfca2d5bfca","shortName":"VVD"},"title":"Vulnesis Vulnerability Database Enrichment","x_crit":$crit[0]}])' "$cve_file" > "${cve_file}.tmp" && mv "${cve_file}.tmp" "$cve_file"
         echo "  $cve_id: $count CRIT records injected"
     done
     rm -f /tmp/crit_records.json /tmp/crit_tmp.json
@@ -134,7 +134,7 @@ clean:
     rm -rf {{outdir}}
 
 # ---- Terraform (state in S3: vdb-manager-terraform-state, key ietf-crit-spec/terraform.tfstate) ----
-# Runs from any operator machine (Vulnetix/ops RUNBOOK): AWS credentials for the
+# Runs from any operator machine (Vulnesis/ops RUNBOOK): AWS credentials for the
 # state bucket, and the Cloudflare token from Bitwarden, in memory only.
 
 # terraform init against the S3 backend

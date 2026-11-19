@@ -8,7 +8,7 @@ vulnerabilities.
 | **Specification:** ``draft-vulnetix-crit-04`` https://datatracker.ietf.org/doc/draft-vulnetix-crit/
 | **Conformance:** ``tests/reports/crit-test-report.md``
 | **Read:** ``build/draft-vulnetix-crit-04.html`` -- **Edit:** ``drafts/draft-vulnetix-crit-04.xml``
-| **Author:** Christopher Daniel Langton, Vulnetix
+| **Author:** Christopher Daniel Langton, Vulnesis
 | **Status:** Active development
 
 
@@ -343,7 +343,7 @@ CRIT in CVE Records
 
 In production, CRIT records live inside CVE_RECORD v5.1 ADP containers. The
 ``data/`` directory contains 17 complete CVE records with embedded CRIT data.
-Here is the structure -- a Vulnetix VVD ADP container carries an ``x_crit``
+Here is the structure -- a Vulnesis VVD ADP container carries an ``x_crit``
 array with one entry per affected provider and resource type:
 
 .. code-block:: json
@@ -363,7 +363,7 @@ array with one entry per affected provider and resource type:
              "orgId": "8254265b-2729-46b6-b9e3-3dfca2d5bfca",
              "shortName": "VVD"
            },
-           "title": "Vulnetix Vulnerability Database Enrichment",
+           "title": "Vulnesis Vulnerability Database Enrichment",
            "x_crit": [
              {
                "crit_version": "0.2.0",

@@ -1,7 +1,7 @@
 terraform {
   required_version = ">= 1.10" # S3 backend native locking (use_lockfile)
 
-  # Shared state, the same bucket and convention as the other Vulnetix roots.
+  # Shared state, the same bucket and convention as the other Vulnesis roots.
   backend "s3" {
     bucket       = "vdb-manager-terraform-state"
     key          = "ietf-crit-spec/terraform.tfstate"
