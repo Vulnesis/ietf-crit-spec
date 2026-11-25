@@ -13,7 +13,7 @@ on:
 
 jobs:
   build:
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     permissions:
       contents: read
     steps:
@@ -30,7 +30,7 @@ jobs:
           go-version-file: go.mod
 
       # A single job looping over targets instead of a 5-way matrix: each
-      # matrix leg claimed its own self-hosted vulnetix-local runner for a
+      # matrix leg claimed its own self-hosted vulnesis-cf runner for a
       # few seconds of cross-compilation with no tests, which is wasteful on
       # a shared, capacity-limited pool (see cloudscan/release.yml for the
       # same pattern).
@@ -52,7 +52,7 @@ jobs:
 
   release:
     needs: build
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     permissions:
       contents: write
     steps:
