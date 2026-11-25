@@ -133,18 +133,18 @@ setup-hooks:
 clean:
     rm -rf {{outdir}}
 
-# ---- Terraform (state in S3: vdb-manager-terraform-state, key ietf-crit-spec/terraform.tfstate) ----
+# ---- Terraform (state in R2: vulnesis-terraform-state, key ietf-crit-spec/terraform.tfstate) ----
 # Runs from any operator machine (Vulnesis/ops RUNBOOK): AWS credentials for the
 # state bucket, and the Cloudflare token from Bitwarden, in memory only.
 
-# terraform init against the S3 backend
+# terraform init against the R2 backend (vx-tf: Vulnesis/ops tools, `just install` there)
 tf-init:
-    terraform -chdir=terraform init -input=false
+    vx-tf terraform init -input=false -reconfigure
 
 # Show what would change
 tf-plan: tf-init
-    vx-secrets run shared -- terraform -chdir=terraform plan -input=false
+    vx-secrets run shared -- vx-tf terraform plan -input=false
 
 # Apply (asks for confirmation)
 tf-apply: tf-init
-    vx-secrets run shared -- terraform -chdir=terraform apply -input=false
+    vx-secrets run shared -- vx-tf terraform apply -input=false
