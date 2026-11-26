@@ -7,5 +7,5 @@ variable "cloudflare_api_token" {
 variable "cloudflare_zone_id" {
   description = "Cloudflare zone ID for vulnes.is"
   type        = string
-  default     = "d3aeda6727dbbae840f5abb1aab1444d"
+  default     = "4066f0b161bc71744adb52fbd584b691"
 }
